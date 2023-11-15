@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="imp1" placeholder="Enter a number" type="text">
+    <input id="imp2" placeholder="Enter a number" type="text">
+    <button onclick="Multiply()">Multiply</button>
+    <div id="Displayres"></div>
+   
+</body>
+</html>
+<script>
+  function  Multiply(){
+    let input1 = document.getElementById("imp1").value;
+    let input2 = document.getElementById("imp2").value;
+    let divs1 = document.getElementById("Displayres")
+
+    for (let index = 0; index <= input2; index++) {
+    let result = input1 * index 
+    divs1.innerHTML += input1 + " x " + index + " = " + result + " <br>"
+  }
+
+ }
+</script>
